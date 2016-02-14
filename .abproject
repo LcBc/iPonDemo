@@ -1,0 +1,45 @@
+{
+  "ProjectName": "iPonDemo",
+  "ProjectGuid": "99c8197a-6c40-4b9a-bc41-797c03336d27",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.iPonDemo",
+  "DisplayName": "iPonDemo",
+  "Author": "",
+  "Description": "iPonDemo",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{06da5ebd-db4d-4e8e-ae73-96c442ed0f58}",
+  "WP8ProductID": "{8075b1d8-7b08-49d1-a8d9-9bfa2676e2a6}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.iPonDemo",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}

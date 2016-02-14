@@ -1,0 +1,81 @@
+<ion-view id="calendar">
+	<ion-header-bar align-title="left" class="custom-header bar-positive">
+	  <div class="buttons">
+	    <button class="custom-button button icon ion-ios-arrow-back" ng-click="goConnect()"></button>
+	  </div>
+	  <h1 class="title title-right">Calendar</h1>	  
+	</ion-header-bar>
+    <ion-content class="padding">
+        <div class="content">
+            <div>
+                <img src="img/calendar.png" style="width: 100%;" alt="calendar" />
+            </div>
+            <div>
+                <span class="day-title">Cycle Days</span>
+                <select>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option selected>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                    <option>32</option>
+                    <option>33</option>
+                    <option>34</option>
+                    <option>35</option>
+                    <option>36</option>
+                </select>
+            </div>
+            <div>
+                <span class="day-title">Period Days</span>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option selected>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div class="last-cyle" style=" margin-top: 20px !important;">
+                <div class="day-title">Last Cycle</div>
+                <input type="date" value="2015-12-13"/>
+            </div>
+        </div>
+    </ion-content>
+    
+     <ion-footer-bar  class="custom-footer bar-assertive">
+      <ion-tabs class="tabs-positive">
+
+        <ion-tab icon="ion-android-home" ng-click="goConnect()">          
+        </ion-tab>
+          
+        <ion-tab title="" icon="ion-ios-bell" ng-click="goAlert()">
+          <ion-nav-view name="alerts-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="" icon="ion-ios-calendar">
+          <ion-nav-view name="calendar-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="" icon="ion-ios-cart" ng-click="goBuy()">
+          <ion-nav-view name="buy-tab"></ion-nav-view>
+        </ion-tab>
+
+        <!--<ion-tab title="" icon="ion-help-circled" ng-click="goHelp()">
+          <ion-nav-view name="help-tab"></ion-nav-view>
+        </ion-tab>-->
+
+      </ion-tabs>
+    </ion-footer-bar>
+</ion-view>

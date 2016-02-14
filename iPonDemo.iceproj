@@ -1,0 +1,1465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>99c8197a-6c40-4b9a-bc41-797c03336d27</ProjectGuid>
+    <ProjectTypeGuids>{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="css\icons_mobiscroll.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\icons_mobiscroll.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\icons_mobiscroll.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\icons_mobiscroll.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-Black.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-BlackItalic.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-Bold.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-BoldItalic.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-Italic.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-Light.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-LightItalic.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-Medium.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-MediumItalic.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-Regular.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-Thin.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\Roboto-ThinItalic.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="css\style.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="fonts\LICENSE.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\alert.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\amazon.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Batt_0.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Batt_100.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Batt_25.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Batt_50.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Batt_75.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\buy_btn.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\calendar.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\calendar_old.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\charge.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Connect_Fail_UI.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Connect_Success_UI.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\ionic.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\logo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\map.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\orange_pin.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Pad_10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Pad_25.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Pad_50.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Pad_75.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Pad_90.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\person_black_mini.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\setting.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Tampon_10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Tampon_25.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Tampon_50.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Tampon_75.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Tampon_90.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\waiting.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\app.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\controllers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\directives.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\directives\info-window.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\directives\map.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\directives\map_controller.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\directives\marker.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\directives\shape.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\infobox.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\services.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="js\sortable.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\alerts.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\bar.html" />
+    <Content Include="templates\buy.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\calendar.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\connect.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\help.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="templates\settings.html">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include=".abignore" />
+    <Content Include=".abproject" />
+    <Content Include=".app.json" />
+    <Content Include=".debug.abproject" />
+    <Content Include=".release.abproject" />
+    <Content Include=".yo-rc.json" />
+    <Content Include="app.js" />
+    <Content Include="cordova.android.js" />
+    <Content Include="cordova.ios.js" />
+    <Content Include="cordova.wp8.js" />
+    <Content Include="index.html" />
+    <Resource Include="App_Resources\Android\drawable-hdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-ldpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-mdpi\icon.png" />
+    <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
+    <Resource Include="App_Resources\iOS\Default-568h@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-667h.png" />
+    <Resource Include="App_Resources\iOS\Default-736h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-667h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape-736h.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape.png" />
+    <Resource Include="App_Resources\iOS\Default-Landscape@2x.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait.png" />
+    <Resource Include="App_Resources\iOS\Default-Portrait@2x.png" />
+    <Resource Include="App_Resources\iOS\Default.png" />
+    <Resource Include="App_Resources\iOS\Default@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-40.png" />
+    <Resource Include="App_Resources\iOS\icon-40@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-40@3x.png" />
+    <Resource Include="App_Resources\iOS\icon-60.png" />
+    <Resource Include="App_Resources\iOS\icon-60@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-60@3x.png" />
+    <Resource Include="App_Resources\iOS\icon-72.png" />
+    <Resource Include="App_Resources\iOS\icon-72@2x.png" />
+    <Resource Include="App_Resources\iOS\icon-76.png" />
+    <Resource Include="App_Resources\iOS\icon-76@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small-50@2x.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small.png" />
+    <Resource Include="App_Resources\iOS\Icon-Small@2x.png" />
+    <Resource Include="App_Resources\iOS\icon.png" />
+    <Resource Include="App_Resources\iOS\icon@2x.png" />
+    <Resource Include="App_Resources\iOS\watch-172x172.png" />
+    <Resource Include="App_Resources\iOS\watch-196x196.png" />
+    <Resource Include="App_Resources\iOS\watch-48x48.png" />
+    <Resource Include="App_Resources\iOS\watch-55x55.png" />
+    <Resource Include="App_Resources\iOS\watch-58x58.png" />
+    <Resource Include="App_Resources\iOS\watch-80x80.png" />
+    <Resource Include="App_Resources\iOS\watch-87x87.png" />
+    <Resource Include="App_Resources\iOS\watch-88x88.png" />
+    <Resource Include="App_Resources\WP8\ApplicationIcon.png" />
+    <Resource Include="App_Resources\WP8\SplashScreenImage.jpg" />
+    <Resource Include="App_Resources\WP8\Assets\BadgeLogo.png" />
+    <Resource Include="App_Resources\WP8\Assets\Logo.png" />
+    <Resource Include="App_Resources\WP8\Assets\SplashScreen.png" />
+    <Resource Include="App_Resources\WP8\Assets\SquareTile150x150.png" />
+    <Resource Include="App_Resources\WP8\Assets\SquareTile71x71.png" />
+    <Resource Include="App_Resources\WP8\Assets\StoreLogo.png" />
+    <Resource Include="App_Resources\WP8\Assets\WideLogo.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\110x110.png" />
+    <Resource Include="App_Resources\WP8\Tiles\Iconic\202x202.png" />
+    <Content Include="components\home\index.js" />
+    <Content Include="components\home\view.html" />
+    <Content Include="kendo\js\jquery.min.js" />
+    <Content Include="kendo\js\kendo.mobile.min.js" />
+    <Content Include="kendo\styles\kendo.mobile.all.min.css" />
+    <Content Include="kendo\styles\images\back.png" />
+    <Content Include="kendo\styles\images\kendoui.svg" />
+    <Content Include="kendo\styles\images\kendoui.ttf" />
+    <Content Include="kendo\styles\images\kendoui.woff" />
+    <Content Include="kendo\styles\images\wp8_icons.png" />
+    <Content Include="kendo\styles\images\wp8_inverseicons.png" />
+    <TypeScriptCompile Include="kendo\typescript\jquery.d.ts" />
+    <TypeScriptCompile Include="kendo\typescript\kendo.mobile.d.ts" />
+    <Content Include="lib\angular-animate\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\angular-animate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\angular-animate.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\angular-animate.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-animate\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-pnotify\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-pnotify\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-pnotify\LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-pnotify\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-pnotify\src\angular-pnotify.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\angular-sanitize.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\angular-sanitize.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\angular-sanitize.min.js.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-sanitize\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\CHANGELOG.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\CONTRIBUTING.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\release\angular-ui-router.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\release\angular-ui-router.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\common.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\resolve.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\state.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\stateDirectives.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\stateFilters.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\templateFactory.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\urlMatcherFactory.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\urlRouter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\view.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\viewDirective.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular-ui-router\src\viewScroll.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\angular-csp.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\angular.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\angular.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\angular\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\css\bootstrap-theme.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\css\bootstrap-theme.css.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\css\bootstrap-theme.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\css\bootstrap.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\css\bootstrap.css.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\css\bootstrap.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\js\bootstrap.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\js\bootstrap.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\dist\js\npm.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff2">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\Gruntfile.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\grunt\.jshintrc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\grunt\bs-commonjs-generator.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\grunt\bs-glyphicons-data-generator.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\grunt\bs-lessdoc-parser.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\grunt\bs-raw-files-generator.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\grunt\configBridge.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\grunt\sauce_browsers.yml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\.jscsrc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\.jshintrc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\affix.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\alert.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\button.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\carousel.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\collapse.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\dropdown.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\modal.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\popover.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\scrollspy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\tab.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\tooltip.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\js\transition.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\.csscomb.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\.csslintrc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\alerts.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\badges.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\bootstrap.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\breadcrumbs.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\button-groups.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\buttons.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\carousel.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\close.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\code.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\component-animations.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\dropdowns.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\forms.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\glyphicons.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\grid.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\input-groups.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\jumbotron.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\labels.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\list-group.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\media.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\alerts.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\background-variant.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\border-radius.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\buttons.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\center-block.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\clearfix.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\forms.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\gradients.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\grid-framework.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\grid.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\hide-text.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\image.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\labels.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\list-group.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\nav-divider.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\nav-vertical-align.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\opacity.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\pagination.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\panels.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\progress-bar.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\reset-filter.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\resize.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\responsive-visibility.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\size.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\tab-focus.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\table-row.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\text-emphasis.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\text-overflow.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\mixins\vendor-prefixes.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\modals.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\navbar.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\navs.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\normalize.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\pager.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\pagination.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\panels.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\popovers.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\print.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\progress-bars.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\responsive-embed.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\responsive-utilities.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\scaffolding.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\tables.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\theme.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\thumbnails.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\tooltip.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\type.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\utilities.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\variables.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\less\wells.less">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\package.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\bootstrap\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic-rating\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic-rating\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic-rating\ionic-rating.coffee">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic-rating\ionic-rating.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic-rating\ionic-rating.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic-rating\ionic-rating.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic-rating\LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic-rating\Makefile">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic-rating\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic-rating\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\css\ionic.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\css\ionic.min.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\fonts\ionicons.eot">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\fonts\ionicons.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\fonts\ionicons.ttf">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\fonts\ionicons.woff">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular-ui\angular-ui-router.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular-ui\angular-ui-router.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\angular-animate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\angular-animate.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\angular-resource.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\angular-resource.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\angular-sanitize.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\angular-sanitize.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\angular.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\angular\angular.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\ionic-angular.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\ionic-angular.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\ionic.bundle.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\ionic.bundle.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\ionic.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\js\ionic.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionic.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionicons\ionicons.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-animation.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-font.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-icons.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\ionicons\_ionicons-variables.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_action-sheet.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_animations.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_backdrop.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_badge.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_bar.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_button-bar.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_button.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_checkbox.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_form.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_grid.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_items.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_list.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_loading.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_menu.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_mixins.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_modal.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_platform.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_popover.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_popup.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_progress.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_radio.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_range.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_reset.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_scaffolding.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_select.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_slide-box.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_split-pane.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_tabs.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_toggle.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_transitions.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_type.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_util.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\scss\_variables.scss">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ionic\version.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\dist\jquery.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\dist\jquery.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\dist\jquery.min.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\MIT-LICENSE.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\ajax.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\ajax\jsonp.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\ajax\load.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\ajax\parseJSON.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\ajax\parseXML.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\ajax\script.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\ajax\var\nonce.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\ajax\var\rquery.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\ajax\xhr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\attributes.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\attributes\attr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\attributes\classes.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\attributes\prop.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\attributes\support.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\attributes\val.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\callbacks.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\core.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\core\access.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\core\init.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\core\parseHTML.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\core\ready.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\core\var\rsingleTag.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\addGetHookIf.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\curCSS.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\defaultDisplay.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\hiddenVisibleSelectors.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\support.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\swap.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\var\cssExpand.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\var\getStyles.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\var\isHidden.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\var\rmargin.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\css\var\rnumnonpx.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\data.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\data\accepts.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\data\Data.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\data\var\data_priv.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\data\var\data_user.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\deferred.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\deprecated.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\dimensions.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\effects.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\effects\animatedSelector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\effects\Tween.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\event.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\event\ajax.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\event\alias.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\event\support.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\exports\amd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\exports\global.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\jquery.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\manipulation.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\manipulation\support.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\manipulation\var\rcheckableType.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\manipulation\_evalUrl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\offset.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\outro.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\queue.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\queue\delay.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\selector-native.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\selector-sizzle.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\selector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\serialize.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\sizzle\dist\sizzle.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\sizzle\dist\sizzle.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\sizzle\dist\sizzle.min.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\traversing.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\traversing\findFilter.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\traversing\var\rneedsContext.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\arr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\class2type.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\concat.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\hasOwn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\indexOf.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\pnum.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\push.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\rnotwhite.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\slice.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\strundefined.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\support.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\var\toString.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\jquery\src\wrap.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ngCordova\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ngCordova\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ngCordova\CHANGELOG.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ngCordova\dist\ng-cordova-mocks.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ngCordova\dist\ng-cordova-mocks.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ngCordova\dist\ng-cordova.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ngCordova\dist\ng-cordova.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ngCordova\LICENSE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ngCordova\package.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\ngCordova\README.md">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\.bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\.gitignore">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\bower.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\nbproject\private\private.properties">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\nbproject\project.properties">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\nbproject\project.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.buttons.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.buttons.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.callbacks.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.confirm.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.core.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.core.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.desktop.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.history.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.history.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.nonblock.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.picon.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\pnotify\pnotify.reference.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="resources\TURNKEY-250pxls.gif">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="styles\main.css" />
+    <TypeScriptCompile Include="lib\angular-ui-router\api\angular-ui-router.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Resources\" />
+    <Folder Include="App_Resources\Android\" />
+    <Folder Include="App_Resources\Android\drawable-hdpi\" />
+    <Folder Include="App_Resources\Android\drawable-ldpi\" />
+    <Folder Include="App_Resources\Android\drawable-mdpi\" />
+    <Folder Include="App_Resources\Android\drawable-nodpi\" />
+    <Folder Include="App_Resources\iOS\" />
+    <Folder Include="App_Resources\WP8\" />
+    <Folder Include="App_Resources\WP8\Assets\" />
+    <Folder Include="App_Resources\WP8\Tiles\" />
+    <Folder Include="App_Resources\WP8\Tiles\Iconic\" />
+    <Folder Include="components\" />
+    <Folder Include="components\home\" />
+    <Folder Include="css\" />
+    <Folder Include="fonts\" />
+    <Folder Include="img\" />
+    <Folder Include="js\" />
+    <Folder Include="js\directives\" />
+    <Folder Include="kendo\" />
+    <Folder Include="kendo\js\" />
+    <Folder Include="kendo\styles\" />
+    <Folder Include="kendo\styles\images\" />
+    <Folder Include="kendo\typescript\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\angular-animate\" />
+    <Folder Include="lib\angular-pnotify\" />
+    <Folder Include="lib\angular-pnotify\src\" />
+    <Folder Include="lib\angular-sanitize\" />
+    <Folder Include="lib\angular-ui-router\" />
+    <Folder Include="lib\angular-ui-router\api\" />
+    <Folder Include="lib\angular-ui-router\release\" />
+    <Folder Include="lib\angular-ui-router\src\" />
+    <Folder Include="lib\angular\" />
+    <Folder Include="lib\bootstrap\" />
+    <Folder Include="lib\bootstrap\dist\" />
+    <Folder Include="lib\bootstrap\dist\css\" />
+    <Folder Include="lib\bootstrap\dist\fonts\" />
+    <Folder Include="lib\bootstrap\dist\js\" />
+    <Folder Include="lib\bootstrap\fonts\" />
+    <Folder Include="lib\bootstrap\grunt\" />
+    <Folder Include="lib\bootstrap\js\" />
+    <Folder Include="lib\bootstrap\less\" />
+    <Folder Include="lib\bootstrap\less\mixins\" />
+    <Folder Include="lib\ionic-rating\" />
+    <Folder Include="lib\ionic\" />
+    <Folder Include="lib\ionic\css\" />
+    <Folder Include="lib\ionic\fonts\" />
+    <Folder Include="lib\ionic\js\" />
+    <Folder Include="lib\ionic\js\angular-ui\" />
+    <Folder Include="lib\ionic\js\angular\" />
+    <Folder Include="lib\ionic\scss\" />
+    <Folder Include="lib\ionic\scss\ionicons\" />
+    <Folder Include="lib\jquery\" />
+    <Folder Include="lib\jquery\dist\" />
+    <Folder Include="lib\jquery\src\" />
+    <Folder Include="lib\jquery\src\ajax\" />
+    <Folder Include="lib\jquery\src\ajax\var\" />
+    <Folder Include="lib\jquery\src\attributes\" />
+    <Folder Include="lib\jquery\src\core\" />
+    <Folder Include="lib\jquery\src\core\var\" />
+    <Folder Include="lib\jquery\src\css\" />
+    <Folder Include="lib\jquery\src\css\var\" />
+    <Folder Include="lib\jquery\src\data\" />
+    <Folder Include="lib\jquery\src\data\var\" />
+    <Folder Include="lib\jquery\src\effects\" />
+    <Folder Include="lib\jquery\src\event\" />
+    <Folder Include="lib\jquery\src\exports\" />
+    <Folder Include="lib\jquery\src\manipulation\" />
+    <Folder Include="lib\jquery\src\manipulation\var\" />
+    <Folder Include="lib\jquery\src\queue\" />
+    <Folder Include="lib\jquery\src\sizzle\" />
+    <Folder Include="lib\jquery\src\sizzle\dist\" />
+    <Folder Include="lib\jquery\src\traversing\" />
+    <Folder Include="lib\jquery\src\traversing\var\" />
+    <Folder Include="lib\jquery\src\var\" />
+    <Folder Include="lib\ngCordova\" />
+    <Folder Include="lib\ngCordova\dist\" />
+    <Folder Include="lib\pnotify\" />
+    <Folder Include="lib\pnotify\nbproject\" />
+    <Folder Include="lib\pnotify\nbproject\private\" />
+    <Folder Include="Plugins\" />
+    <Folder Include="resources\" />
+    <Folder Include="styles\" />
+    <Folder Include="templates\" />
+  </ItemGroup>
+  <Import Project="$(IceniumTargets)Build.targets" />
+  <!--
+    TODO: Uncomment this code if you need to customize the build process.
+    <Target Name="BeforeBuild">
+        <Message Text="TODO: Implement BeforeBuild" Importance="high" />
+    </Target>
+
+    <Target Name="AfterBuild">
+        <Message Text="TODO: Implement AfterBuild" Importance="high" />
+    </Target>
+    -->
+</Project>

@@ -1,0 +1,62 @@
+<ion-view id="buy">
+	<ion-header-bar align-title="left" class="custom-header bar-positive">
+	  <div class="buttons">
+	    <button class="custom-button button icon ion-ios-arrow-back" ng-click="goConnect()"></button>
+	  </div>
+	  <h1 class="title title-right">Buy</h1>	  
+	</ion-header-bar>
+    <ion-content class="padding">        
+        <img src="img/amazon.png" />
+        <div class="center">
+            <select>
+                <option>
+                    o.b Pro Comfort Tampons, 40ct
+                </option>
+                <option>
+                    Carefree Acti-fresh Pantiliners, 120ct
+                </option>
+            </select>
+        </div>
+        <div class="center" style="margin-top:15px;">
+            <span>Qty</span>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <img style="position: relative; top: 10px;" src="img/buy_btn.png" alt="buy_btn"/>
+        </div>
+        <div class="map-section">
+           <p>Retail locations near me</p>
+           <div id="map-area" data-tap-disabled="true">
+               <img style="width: 100%;" src="img/map.png" alt="map" />
+           </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="custom-footer bar-assertive">
+      <ion-tabs class="tabs-positive">
+          
+        <ion-tab icon="ion-android-home" ng-click="goConnect()">          
+        </ion-tab>
+
+        <ion-tab title="" icon="ion-ios-bell" ng-click="goAlert()">
+          <ion-nav-view name="alerts-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="" icon="ion-ios-calendar" ng-click="goCalendar()">
+          <ion-nav-view name="about-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="" icon="ion-ios-cart">
+          <ion-nav-view name="contact-tab"></ion-nav-view>
+        </ion-tab>
+
+        <!--<ion-tab title="" icon="ion-help-circled" ng-click="goHelp()">
+          <ion-nav-view name="contact-tab"></ion-nav-view>
+        </ion-tab>-->
+
+      </ion-tabs>
+    </ion-footer-bar>
+</ion-view>
