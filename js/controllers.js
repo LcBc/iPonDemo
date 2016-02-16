@@ -11,32 +11,32 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
 .constant('api','/some/api/info')
 .service('urls',
 	function(domain, api) { 
-	    this.apiUrl = domain+api;
+		this.apiUrl = domain+api;
 	}
 )
 .service('sharedProperties', function () {
-    var property = {};
-    return {
-        getProperty: function () {
-            return property;
-        },
-        setProperty: function(value) {
-            property = value;
-        }
-    };
+        var property = {};
+        return {
+            getProperty: function () {
+                return property;
+            },
+            setProperty: function(value) {
+                property = value;
+            }
+        };
 })
 .directive('ngEnter', function() {
-    return function(scope, element, attrs) {
-        element.bind("keydown keypress", function(event) {
-            if(event.which === 13) {
-                scope.$apply(function(){
-                    scope.$eval(attrs.ngEnter);
-                });
+        return function(scope, element, attrs) {
+            element.bind("keydown keypress", function(event) {
+                if(event.which === 13) {
+                    scope.$apply(function(){
+                            scope.$eval(attrs.ngEnter);
+                    });
                     
-                event.preventDefault();
-            }
-        });
-    };
+                    event.preventDefault();
+                }
+            });
+        };
 })
 
 .controller('ConnectCtrl', function($scope, $rootScope, FriendService, $http, $timeout, $ionicLoading,  $interval, $state,  $ionicPopup, $ionicActionSheet, $window, sharedProperties) {	
@@ -58,65 +58,65 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
         sharedProperties.setProperty($scope.status);
 
         $scope.Batt_URL = "img/Batt_0.png";
-        $scope.Sat_URL = "img/Tampon_10.png";
+        $scope.Sat_URL = "img/Tampon_90.png";
         
         //Run Scan BLE
         setTimeout(function(){ 
-            $scope.scanBLE(); 
+           $scope.scanBLE(); 
         }, 2000);
         
     };    
     
     
-    $scope.scanBLE = function () {    
+	$scope.scanBLE = function () {    
         $scope.bFound = false;
-        ble.isEnabled(
-           function () {
-               var scanSeconds = 30;
-               //alert("Scanning for BLE peripherals for " + scanSeconds + " seconds.");
-               ble.startScan([], function(device) {
-                   console.log("---start Scan----");                    
-                   if($scope.bFound == true) {
-                       return ;
-                   }
+         ble.isEnabled(
+            function () {
+                var scanSeconds = 30;
+                //alert("Scanning for BLE peripherals for " + scanSeconds + " seconds.");
+                ble.startScan([], function(device) {
+                    console.log("---start Scan----");                    
+                    if($scope.bFound == true) {
+                        return ;
+                    }
                     
-                   if(device.name != "TK0583 iPon") {
-                       return ;
-                   }
+                    if(device.name != "TK0583 iPon") {
+                        return ;
+                    }
                     
-                   console.log(JSON.stringify(device));
-                   $scope.bConnect = true;
-                   $scope.bFound = true;
-                   console.log(device.id);
-                   $scope.device_id = device.id;
+                    console.log(JSON.stringify(device));
+                    $scope.bConnect = true;
+                    $scope.bFound = true;
+                    console.log(device.id);
+                    $scope.device_id = device.id;
                     
                    ble.connect($scope.device_id, connectSuccess, connectFailure);
                     
-               }, function (reason) {
+                }, function (reason) {
                    alert("BLE Scan failed " + reason);
-               });
+                });
                 
-               setTimeout(ble.stopScan,
-                   scanSeconds * 1000,
-                   function () {
-                       console.log("Scan complete");                        
-                       if($scope.bFound == false) {
+                setTimeout(ble.stopScan,
+                    scanSeconds * 1000,
+                    function () {
+                        console.log("Scan complete");                        
+                        if($scope.bFound == false) {
                            $scope.tryConnecting();
-                       }
-                   },
-                   function () {
-                       console.log("stopScan failed");                        
-                       if($scope.bFound == false) {
-                           $scope.tryConnecting();
-                       }
-                   }
-              );
+                        }
+                    },
+                    function () {
+                        console.log("stopScan failed");                        
+                        if($scope.bFound == false) {
+                            $scope.tryConnecting();
+                        }
+                    }
+               );
                 
-           },
-           function () {
-               alert("Bluetooth is *not* enabled, Please enable Bluetooth");
-           }
-       );        
+            },
+            function () {
+                alert("Bluetooth is *not* enabled, Please enable Bluetooth");
+            }
+        );        
     };
     
     var connectSuccess = function(deviceInfo) {
@@ -197,7 +197,7 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
                     }
                 }, 500);
             }
-            //alert(gLowBattValue + "% Battery on Charm");
+                //alert(gLowBattValue + "% Battery on Charm");
         }
 
         console.log("Battery percentage = " + p);
@@ -329,7 +329,10 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
             return ;    
         }
         
-      
+        if(!p) {
+            return ;
+        }
+        
         $scope.status = sharedProperties.getProperty();
                
         setTimeout(function () {
@@ -367,27 +370,27 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
     }
     
     $scope.goConnect = function () {
-        $state.go('connect');
+		$state.go('connect');
     };
     
     $scope.goSetting = function () {
-        $state.go('settings');
+		$state.go('settings');
     };
 
     $scope.goAlert = function () {
-        $state.go('alerts');
+    	$state.go('alerts');
     };
     
     $scope.goCalendar = function () {
-        $state.go('calendar');
+    	$state.go('calendar');
     };
     
     $scope.goBuy = function () {
-        $state.go('buy');
+    	$state.go('buy');
     };
     
     $scope.goHelp = function () {
-        $state.go('help');
+    	$state.go('help');
     };    
     
 })
@@ -400,73 +403,73 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
     });
     
     $scope.goConnect = function () {
-        $state.go('connect');
+		$state.go('connect');
     };
     
     $scope.goSetting = function () {
-        $state.go('settings');
+		$state.go('settings');
     };
 
     $scope.goAlert = function () {
-        $state.go('alerts');
+    	$state.go('alerts');
     };
     
     $scope.goCalendar = function () {
-        $state.go('calendar');
+    	$state.go('calendar');
     };
     
     $scope.goBuy = function () {
-        $state.go('buy');
+    	$state.go('buy');
     };
     
     $scope.goHelp = function () {
-        $state.go('help');
+    	$state.go('help');
     };
     
-    $scope.selectProduct = function(idx) {
-        if(idx === 1) {
-            gProduct = 1;
-            //alert("Tampon");
-            $rootScope.connectedClass = "blue";
-            $rootScope.connectedSmallText = "It's time to";
-            $rootScope.connectedBigText = "Change";
+     $scope.selectProduct = function(idx) {
+         if(idx === 1) {
+           gProduct = 1;
+           //alert("Tampon");
+           $rootScope.connectedClass = "blue";
+           $rootScope.connectedSmallText = "It's time to";
+           $rootScope.connectedBigText = "Change";
              
-            var property = {};
-            property = {};
-            property.bConnect = false;
-            property.bConnected = true;
-            property.bConnecting = false;
-            property.use_time = "4 Hours 37 Minutes";
-            property.connectedClass = "blue";
-            property.connectedSmallText = "It's time to";
-            property.connectedBigText = "Change";
+           var property = {};
+           property = {};
+           property.bConnect = false;
+           property.bConnected = true;
+           property.bConnecting = false;
+           property.use_time = "4 Hours 37 Minutes";
+           property.connectedClass = "blue";
+           property.connectedSmallText = "It's time to";
+           property.connectedBigText = "Change";
            
-            sharedProperties.setProperty(property);
+           sharedProperties.setProperty(property);
              
-            $scope.goConnect();
+           $scope.goConnect();
                       
-        } else {
-            gProduct = 2;
-            //alert("Pantiliner");
-            $rootScope.connectedClass = "light-blue";
-            $rootScope.connectedSmallText = "You're doing";
-            $rootScope.connectedBigText = "Great";
+         } else {
+           gProduct = 2;
+           //alert("Pantiliner");
+           $rootScope.connectedClass = "light-blue";
+           $rootScope.connectedSmallText = "You're doing";
+           $rootScope.connectedBigText = "Great";
              
-            var property = {};
-            property = {};
-            property.bConnect = false;
-            property.bConnected = true;
-            property.bConnecting = false;
-            property.use_time = "2 Hours 23 Minutes";
-            property.connectedClass = "light-blue";
-            property.connectedSmallText = "You're doing";
-            property.connectedBigText = "Great";
+           var property = {};
+           property = {};
+           property.bConnect = false;
+           property.bConnected = true;
+           property.bConnecting = false;
+           property.use_time = "2 Hours 23 Minutes";
+           property.connectedClass = "light-blue";
+           property.connectedSmallText = "You're doing";
+           property.connectedBigText = "Great";
            
-            sharedProperties.setProperty(property);
+           sharedProperties.setProperty(property);
              
-            $scope.goConnect();
+           $scope.goConnect();
              
-        }
+         }
     };    
 })
 
@@ -529,37 +532,37 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
     });
     
     $scope.goConnect = function () {
-        $state.go('connect');
+		$state.go('connect');
     };
     
     $scope.goSetting = function () {
-        $state.go('settings');
+		$state.go('settings');
     };
 
     $scope.goAlert = function () {
-        $state.go('alerts');
+    	$state.go('alerts');
     };
     
     $scope.goCalendar = function () {
-        $state.go('calendar');
+    	$state.go('calendar');
     };
     
     $scope.goBuy = function () {
-        $state.go('buy');
+    	$state.go('buy');
     };
     
     $scope.goHelp = function () {
-        $state.go('help');
+    	$state.go('help');
     };
     
     $scope.changeSatMode = function () {
-        //alert($scope.SatMode.checked);  
+      //alert($scope.SatMode.checked);  
         bSat = $scope.SatMode.checked;
         window.localStorage.setItem("bSat", bSat);
     };
     
     $scope.changeLowBattMode = function () {
-        //alert($scope.SatMode.checked);  
+      //alert($scope.SatMode.checked);  
         bLowBatt = $scope.LowBattMode.checked;
         window.localStorage.setItem("bLowBatt", bLowBatt);
     };
@@ -586,27 +589,27 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
     });
     
     $scope.goConnect = function () {
-        $state.go('connect');
+		$state.go('connect');
     };
     
     $scope.goSetting = function () {
-        $state.go('settings');
+		$state.go('settings');
     };
 
     $scope.goAlert = function () {
-        $state.go('alerts');
+    	$state.go('alerts');
     };
     
     $scope.goCalendar = function () {
-        $state.go('calendar');
+    	$state.go('calendar');
     };
     
     $scope.goBuy = function () {
-        $state.go('buy');
+    	$state.go('buy');
     };
     
     $scope.goHelp = function () {
-        $state.go('help');
+    	$state.go('help');
     };
 })
 
@@ -617,27 +620,27 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
     });
     
     $scope.goConnect = function () {
-        $state.go('connect');
+		$state.go('connect');
     };
     
     $scope.goSetting = function () {
-        $state.go('settings');
+		$state.go('settings');
     };
 
     $scope.goAlert = function () {
-        $state.go('alerts');
+    	$state.go('alerts');
     };
     
     $scope.goCalendar = function () {
-        $state.go('calendar');
+    	$state.go('calendar');
     };
     
     $scope.goBuy = function () {
-        $state.go('buy');
+    	$state.go('buy');
     };
     
     $scope.goHelp = function () {
-        $state.go('help');
+    	$state.go('help');
     };
     
 
@@ -655,17 +658,21 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
         //Marker + infowindow + angularjs compiled ng-click
         var contentString = "<div><a ng-click='clickTest()'>Click me!</a></div>";
         var compiled = $compile(contentString)($scope);
+
         var infowindow = new google.maps.InfoWindow({
           content: compiled[0]
         });
+
         var marker = new google.maps.Marker({
           position: myLatlng,
           map: map,
           title: 'Uluru (Ayers Rock)'
         });
+
         google.maps.event.addListener(marker, 'click', function() {
           infowindow.open(map,marker);
         });
+
         $scope.map = map;
       }
       google.maps.event.addDomListener(window, 'load', initialize);
@@ -674,10 +681,12 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
         if(!$scope.map) {
           return;
         }
+
         $scope.loading = $ionicLoading.show({
           content: 'Getting current location...',
           showBackdrop: false
         });
+
         navigator.geolocation.getCurrentPosition(function(pos) {
           $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
           $scope.loading.hide();
@@ -698,41 +707,40 @@ angular.module('iPonDemo.controllers', ['ionic', 'ionic.rating', 'ngCordova'])
     });
     
     $scope.goConnect = function () {
-        $state.go('connect');
+		$state.go('connect');
     };
     
     $scope.goSetting = function () {
-        $state.go('settings');
+		$state.go('settings');
     };
 
     $scope.goAlert = function () {
-        $state.go('alerts');
+    	$state.go('alerts');
     };
     
     $scope.goCalendar = function () {
-        $state.go('calendar');
+    	$state.go('calendar');
     };
     
     $scope.goBuy = function () {
-        $state.go('buy');
+    	$state.go('buy');
     };
     
     $scope.goHelp = function () {
-        $state.go('help');
+    	$state.go('help');
     };
 });
 
 
 function ab2str(buf) {
-    return String.fromCharCode.apply(null, new Uint16Array(buf));
+  return String.fromCharCode.apply(null, new Uint16Array(buf));
 }
 
 function str2ab(str) {
-    var buf = new ArrayBuffer(str.length*2); // 2 bytes for each char
-    var bufView = new Uint16Array(buf);
-    for (var i=0, strLen=str.length; i<strLen; i++) {
-        bufView[i] = str.charCodeAt(i);
-    }
-    return buf;
+  var buf = new ArrayBuffer(str.length*2); // 2 bytes for each char
+  var bufView = new Uint16Array(buf);
+  for (var i=0, strLen=str.length; i<strLen; i++) {
+    bufView[i] = str.charCodeAt(i);
+  }
+  return buf;
 }
-

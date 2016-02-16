@@ -1,4 +1,4 @@
-﻿/*
+/*
 * Kendo UI Core v2015.3.1023 (http://www.telerik.com/kendo-ui)
 * Copyright 2015 Telerik AD. All rights reserved.
 *

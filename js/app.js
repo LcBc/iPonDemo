@@ -6,7 +6,7 @@
 // 'iPonDemo.controllers' is found in controllers.js
 
 
-//ionic.Gestures.gestures.Hold.defaults.hold_threshold = 20;
+ionic.Gestures.gestures.Hold.defaults.hold_threshold = 20;
 
 angular.module('iPonDemo', ['ionic', 'ionic.rating', 'iPonDemo.controllers', 'iPonDemo.services', 'iPonDemo.sortable'])
 
@@ -25,7 +25,9 @@ angular.module('iPonDemo', ['ionic', 'ionic.rating', 'iPonDemo.controllers', 'iP
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
-    }
+    }      
+  
+   
   });
 })
 
@@ -68,12 +70,6 @@ angular.module('iPonDemo', ['ionic', 'ionic.rating', 'iPonDemo.controllers', 'iP
     url: "/help",
     templateUrl: "templates/help.html",
     controller: 'HelpCtrl'
-  })
-  .state('main',
-  {
-      url: "/",
-      templateUrl: "templates/connect.html",
-      controller: 'ConnectCtrl'
   });
   
   // if none of the above states are matched, use this as the fallback
