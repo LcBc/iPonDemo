@@ -126,7 +126,13 @@
     <Content Include="img\orange_pin.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="img\Pad_0.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="img\Pad_10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Pad_100.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="img\Pad_25.png">
@@ -147,7 +153,13 @@
     <Content Include="img\setting.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="img\Tampon_0.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="img\Tampon_10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\Tampon_100.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="img\Tampon_25.png">
